@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useState } from "react"
 import './Style.css'
 
-interface ContainerProps {
+interface ContainerProps { 
     label: string
 }
 
-const StandardButton: React.FC<ContainerProps> = ({label}) => {
+const LargeButton: React.FC<ContainerProps> = ({label}) => {
 
     const [clicked, setClicked] = useState(false)
 
@@ -15,8 +15,8 @@ const StandardButton: React.FC<ContainerProps> = ({label}) => {
     }
 
     return (
-        <button
-            className={clicked ? 'standardButton clicked' : 'standardButton'}
+        <button 
+            className={clicked ? 'largeButton clicked' : 'largeButton'}
             onClick={handleClick}
         >
             {label}
@@ -24,4 +24,4 @@ const StandardButton: React.FC<ContainerProps> = ({label}) => {
     )
 }
 
-export default StandardButton
+export default LargeButton

@@ -26,3 +26,14 @@
 .standardButton.clicked {
     background-color: blue;
 }
+
+.largeButton {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.largeButton.clicked {
+    background-color: blue;
+}
