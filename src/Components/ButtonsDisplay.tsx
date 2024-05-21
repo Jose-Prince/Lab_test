@@ -35,7 +35,7 @@ const ButtonsDisplay: React.FC<ContainerProps> = ({setInput, input, setOperation
                 <div style={{
                     display: 'flex',
                 }}>
-                    <LargeButton label="0"/>
+                    <LargeButton label="0" input={input} setInput={setInput} setOperation={setOperation} operation={operation} result={result} setResult={setResult}/>
                     <StandardButton input={input} label="." setInput={setInput} setOperation={setOperation} operation={operation} result={result} setResult={setResult}/>
                 </div>
             </div>
