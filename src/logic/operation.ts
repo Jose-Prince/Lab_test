@@ -1,4 +1,4 @@
-export function operation(a: number,b: number,sign: string) {
+export function operationL(a: number,b: number,sign: string) {
     let operation;
     switch (sign) {
         case '+':
@@ -15,7 +15,7 @@ export function operation(a: number,b: number,sign: string) {
             }
             return (a+b).toString()
         
-        case '*':
+        case 'X':
             operation = a*b
             if (operation.toString().length > 9){
                 return operation.toExponential(4).toString()
