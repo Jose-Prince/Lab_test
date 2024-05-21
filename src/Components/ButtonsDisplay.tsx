@@ -37,9 +37,10 @@ const ButtonsDisplay: React.FC<ContainerProps> = ({setInput, input}) => {
             </div>
             <div style={{
                 display: 'flex',
-                flexDirection: 'column'
+                flexDirection: 'column',
+                marginLeft: '10px'
             }}>
-                
+                <LargeButton label="AC"/>
             </div>
         </div>
     )
