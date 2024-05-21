@@ -1,3 +1,4 @@
+import LargeButton from "./LargeButton"
 import StandardButton from "./StandardButton"
 
 interface ContainerProps {
@@ -25,6 +26,13 @@ const ButtonsDisplay: React.FC<ContainerProps> = ({setInput, input}) => {
                     <StandardButton input={input} label="1" setInput={setInput}/>
                     <StandardButton input={input} label="2" setInput={setInput}/>
                     <StandardButton input={input} label="3" setInput={setInput}/>
+                </div>
+                <div style={{
+                    display: 'flex',
+                    paddingLeft: '10px'
+                }}>
+                    <LargeButton label="="/>
+                    <StandardButton input={input} label="." setInput={setInput}/>
                 </div>
             </div>
             <div style={{

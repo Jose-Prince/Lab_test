@@ -15,6 +15,12 @@ export function convertorInput(value: string) {
             return parseInt(value).toExponential(2).toString()
         }
         return parseInt(value).toExponential(4).toString()
+    } else {
+        if (value.indexOf('.') >= 9) {
+            return parseFloat(value).toExponential(3).toString()
+        } else {
+            return value.substring(0,9)
+        }
     }
 
     return value

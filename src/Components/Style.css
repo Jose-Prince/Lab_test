@@ -14,6 +14,7 @@
     background-color: darkolivegreen;
     display: grid;
     grid-template-rows: 10% 45% 45%;
+    margin-bottom: 30px;
 }
 
 .standardButton {
@@ -21,12 +22,13 @@
     height: 85px;
     background-color: white;
     border: 1px solid black;
-    margin: 10px;
     color: black;
     font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .standardButton.clicked {
@@ -35,14 +37,20 @@
 }
 
 .largeButton {
-    width: 100px;
-    height: 50px;
+    width: 260px;
+    height: 85px;
+    font-size: 40px;
+    color: black;
     background-color: white;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .largeButton.clicked {
-    background-color: blue;
+    color: black;
+    background-color: black;
 }
 
 .inputDigits {
