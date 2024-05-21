@@ -12,7 +12,7 @@ const Calculator: React.FC = () => {
     return (
         <div className="calculator">
             <ScreenDisplay operation={operation} input={input} result={result}/>
-            <ButtonsDisplay />
+            <ButtonsDisplay input={input} setInput={setInput}/>
         </div>
     )
 }

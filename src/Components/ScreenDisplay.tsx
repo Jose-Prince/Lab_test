@@ -1,3 +1,4 @@
+import { convertorInput } from '../logic/convertor'
 import './Style.css'
 
 interface ContainerProps {
@@ -16,7 +17,7 @@ const ScreenDisplay: React.FC<ContainerProps> = ({operation, input, result}) => 
                     marginTop: '15px',
                     fontSize: '50px'
                 }}>
-                    {input}
+                    {convertorInput(input)}
                 </p>
             </div>
             <div className='resultDigits'>

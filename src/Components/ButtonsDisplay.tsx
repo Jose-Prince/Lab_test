@@ -1,8 +1,11 @@
 import StandardButton from "./StandardButton"
 
-interface ContainerProps {}
+interface ContainerProps {
+    setInput: (input: string) => void
+    input: string
+}
 
-const ButtonsDisplay: React.FC<ContainerProps> = () => {
+const ButtonsDisplay: React.FC<ContainerProps> = ({setInput, input}) => {
     return (
         <div style={{
             display: 'flex',
@@ -13,15 +16,15 @@ const ButtonsDisplay: React.FC<ContainerProps> = () => {
                 width: '65%'
             }}>
                 <div className="numbersDisplay">
-                    <StandardButton label="7"/>
-                    <StandardButton label="8"/>
-                    <StandardButton label="9"/>
-                    <StandardButton label="4"/>
-                    <StandardButton label="5"/>
-                    <StandardButton label="6"/>
-                    <StandardButton label="1"/>
-                    <StandardButton label="2"/>
-                    <StandardButton label="3"/>
+                    <StandardButton input={input} label="7" setInput={setInput}/>
+                    <StandardButton input={input} label="8" setInput={setInput}/>
+                    <StandardButton input={input} label="9" setInput={setInput}/>
+                    <StandardButton input={input} label="4" setInput={setInput}/>
+                    <StandardButton input={input} label="5" setInput={setInput}/>
+                    <StandardButton input={input} label="6" setInput={setInput}/>
+                    <StandardButton input={input} label="1" setInput={setInput}/>
+                    <StandardButton input={input} label="2" setInput={setInput}/>
+                    <StandardButton input={input} label="3" setInput={setInput}/>
                 </div>
             </div>
             <div style={{
