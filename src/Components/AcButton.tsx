@@ -16,7 +16,7 @@ const AcButton: React.FC<ContainerProps> = ({label, setInput, setOperation, setR
         setClicked(true)
         setInput('')
         setOperation('')
-        setOperation('')
+        setResult('')
         setTimeout(() => setClicked(false), 100)
     }
 
