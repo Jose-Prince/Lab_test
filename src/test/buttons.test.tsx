@@ -4,14 +4,17 @@ import StandardButton from '../Components/StandardButton';
 import { useState } from 'react';
 
 const TestComponent = () => {
-  const [input, setInput] = useState('');
+  const [operation, setOperation] = useState('')
+  const [input, setInput] = useState('')
+  const [result, setResult] = useState('')
+
   return (
     <div>
-      <StandardButton label="4" input={input} setInput={setInput} />
+      <StandardButton label="4" input={input} setInput={setInput} setOperation={setOperation} operation={operation} result={result} setResult={setResult}/>
       <div data-testid="input-value">{input}</div> {/* Mostrar el valor del input */}
     </div>
-  );
-};
+  )
+}
 
 export default TestComponent;
 
