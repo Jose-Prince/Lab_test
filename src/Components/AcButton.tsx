@@ -3,14 +3,20 @@ import './Style.css'
 
 interface ContainerProps { 
     label: string
+    setInput: (input: string) => void
+    setOperation: (operation: string) => void
+    setResult: (result: string) => void
 }
 
-const AcButton: React.FC<ContainerProps> = ({label}) => {
+const AcButton: React.FC<ContainerProps> = ({label, setInput, setOperation, setResult}) => {
 
     const [clicked, setClicked] = useState(false)
 
     const handleClick = () => {
         setClicked(true)
+        setInput('')
+        setOperation('')
+        setOperation('')
         setTimeout(() => setClicked(false), 100)
     }
 

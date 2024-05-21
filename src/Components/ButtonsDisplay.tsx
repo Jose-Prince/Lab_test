@@ -44,7 +44,7 @@ const ButtonsDisplay: React.FC<ContainerProps> = ({setInput, input, setOperation
                 flexDirection: 'column',
                 marginLeft: '10px'
             }}>
-                <AcButton label="AC"/>
+                <AcButton label="AC" setInput={setInput} setOperation={setOperation} setResult={setResult}/>
                 <div className="operatorsDisplay">
                     <StandardButton label="+" input={input} setInput={setInput} setOperation={setOperation} operation={operation} result={result} setResult={setResult}/>
                     <StandardButton label="-" input={input} setInput={setInput} setOperation={setOperation} operation={operation} result={result} setResult={setResult}/>
