@@ -1,3 +1,4 @@
+import AcButton from "./AcButton"
 import LargeButton from "./LargeButton"
 import StandardButton from "./StandardButton"
 
@@ -29,7 +30,6 @@ const ButtonsDisplay: React.FC<ContainerProps> = ({setInput, input}) => {
                 </div>
                 <div style={{
                     display: 'flex',
-                    paddingLeft: '10px'
                 }}>
                     <LargeButton label="="/>
                     <StandardButton input={input} label="." setInput={setInput}/>
@@ -40,7 +40,15 @@ const ButtonsDisplay: React.FC<ContainerProps> = ({setInput, input}) => {
                 flexDirection: 'column',
                 marginLeft: '10px'
             }}>
-                <LargeButton label="AC"/>
+                <AcButton label="AC"/>
+                <div className="operatorsDisplay">
+                    <StandardButton label="+"/>
+                    <StandardButton label="+"/>
+                    <StandardButton label="+"/>
+                    <StandardButton label="+"/>
+                    <StandardButton label="+"/>
+                    <StandardButton label="+"/>
+                </div>
             </div>
         </div>
     )

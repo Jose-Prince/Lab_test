@@ -1,7 +1,7 @@
 .calculator {
     background-color: gray;
     height: 600px;
-    width: 500px;
+    width: 540px;
     margin-top: 40%;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-bottom: 10px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .largeButton {
-    width: 260px;
+    width: 205px;
     height: 85px;
     font-size: 40px;
     color: black;
@@ -46,11 +46,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
+    margin-right: 14px;
 }
 
 .largeButton.clicked {
     color: black;
     background-color: black;
+}
+
+.acButton {
+    width: 200px;
+    height: 85px;
+    font-size: 40px;
+    color: black;
+    background-color: orange;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.acButton.clicked {
+    color: black;
+    background-color: darkgoldenrod;
 }
 
 .inputDigits {
@@ -70,5 +90,11 @@
 .numbersDisplay {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.operatorsDisplay {
+    display: grid;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 33.3% 33.3% 33.3%;
 }
