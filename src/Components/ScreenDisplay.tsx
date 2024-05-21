@@ -1,13 +1,32 @@
-interface ContainerProps {
+import './Style.css'
 
+interface ContainerProps {
+    operation : string
+    input: string
+    result: string
 }
 
-const ScreenDisplay: React.FC<ContainerProps> = () => {
+const ScreenDisplay: React.FC<ContainerProps> = ({operation, input, result}) => {
     return (
         <div className="screen">
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
+            <div className='inputDigits'>{operation}</div>
+            <div className='inputDigits'>
+                <p style={{
+                    margin: '0',
+                    marginTop: '15px',
+                    fontSize: '50px'
+                }}>
+                    {input}
+                </p>
+            </div>
+            <div className='resultDigits'>
+            <p style={{
+                    margin: '0',
+                    fontSize: '50px'
+                }}>
+                    {result}
+                </p>
+            </div>
         </div>
     )
 }
