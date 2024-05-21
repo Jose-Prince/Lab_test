@@ -42,12 +42,12 @@ const ButtonsDisplay: React.FC<ContainerProps> = ({setInput, input}) => {
             }}>
                 <AcButton label="AC"/>
                 <div className="operatorsDisplay">
-                    <StandardButton label="+"/>
-                    <StandardButton label="+"/>
-                    <StandardButton label="+"/>
-                    <StandardButton label="+"/>
-                    <StandardButton label="+"/>
-                    <StandardButton label="+"/>
+                    <StandardButton label="+" input={input} setInput={setInput}/>
+                    <StandardButton label="-" input={input} setInput={setInput}/>
+                    <StandardButton label="X" input={input} setInput={setInput}/>
+                    <StandardButton label="/" input={input} setInput={setInput}/>
+                    <StandardButton label="%" input={input} setInput={setInput}/>
+                    <StandardButton label="=" input={input} setInput={setInput}/>
                 </div>
             </div>
         </div>
